@@ -1,5 +1,5 @@
-//  Calculator
-class Calculator {
+//  calculator
+class calculator {
   constructor(previousOperandTextElement, currentOperandTextElement) {
     this.previousOperandTextElement = previousOperandTextElement;
     this.currentOperandTextElement = currentOperandTextElement;
@@ -47,14 +47,14 @@ const currentOperandTextElement = document.querySelector(
   "[data-current-operand]"
 );
 
-const Calculator = new Calculator(
+const calculator = new calculator(
   previousOperandTextElement,
   currentOperandTextElement
 );
 
 numberButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    Calculator.appendNumber(button.innerText);
-    Calculator.updateDisplay();
+    calculator.appendNumber(button.innerText);
+    calculator.updateDisplay();
   });
 });
